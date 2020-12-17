@@ -21,7 +21,10 @@ jobs:
     steps:
       - name: Dump env
         run: |
-          echo CI=$CI
+          echo HOME="$HOME"
+          echo PWD="$PWD"
+          echo PATH="$PATH"
+          echo CI="$CI"
           echo GITHUB_WORKFLOW="$GITHUB_WORKFLOW"
           echo GITHUB_RUN_ID="$GITHUB_RUN_ID"
           echo GITHUB_RUN_NUMBER="$GITHUB_RUN_NUMBER"
