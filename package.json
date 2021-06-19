@@ -1,6 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "test": "ls test && rm -rf test/fixtures && ls test"
+    "test": "ls test && rm -rf test/unknown && ls test"
   }
 }
