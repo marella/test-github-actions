@@ -1,6 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "test": "ls test && rm -rf test/unknown && ls test"
+    "test": "FOO=abc node index.js"
   }
 }
