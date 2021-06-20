@@ -1,6 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "test": "FOO=abc node index.js"
+    "test": "FOO=abc BAR=def node index.js"
   }
 }
