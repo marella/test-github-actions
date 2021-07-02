@@ -1,6 +1,6 @@
 {
   "name": "@marella/temp-test-gha-202107",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "files": [],
   "scripts": {
     "publish": "npm publish"
