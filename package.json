@@ -1,5 +1,6 @@
 {
   "private": true,
+  "version": "0.2.3",
   "scripts": {
     "test": "node index.js"
   }
