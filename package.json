@@ -1,7 +1,11 @@
 {
-  "private": true,
-  "version": "0.2.3",
+  "name": "@marella/temp-test-gha-202107",
+  "version": "0.0.0",
+  "files": [],
   "scripts": {
-    "test": "node index.js"
+    "publish": "npm publish"
+  }
+  "publishConfig": {
+    "access": "public"
   }
 }
