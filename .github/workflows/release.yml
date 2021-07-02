@@ -10,9 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          tag="${GITHUB_REF#refs/tags/}"
-          version="${tag#v}"
-          gh release create "$tag" --title "$version" --notes "Auto Update"
+      - name: Release
+        run: gh release create "${GITHUB_REF#refs/tags/}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
