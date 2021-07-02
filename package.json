@@ -4,7 +4,7 @@
   "files": [],
   "scripts": {
     "publish": "npm publish"
-  }
+  },
   "publishConfig": {
     "access": "public"
   }
