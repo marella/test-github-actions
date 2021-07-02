@@ -2,6 +2,10 @@
   "name": "@marella/temp-test-gha-202107",
   "version": "0.0.2",
   "files": [],
+  "scripts": {
+    "postversion": "VERSION=$(node -p \"require('./package.json').version\") npm run git-commit-tag",
+    "git-commit-tag": "git commit -am $VERSION && git tag -a v$VERSION -m $VERSION"
+  },
   "publishConfig": {
     "access": "public"
   }
