@@ -4,5 +4,4 @@ set -euo pipefail
 
 npm version patch --no-git-tag-version
 
-git push
-git push --tags
+git push --follow-tags
