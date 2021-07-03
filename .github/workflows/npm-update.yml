@@ -2,6 +2,8 @@ name: Update
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
 
 jobs:
   update:
@@ -17,8 +19,14 @@ jobs:
       - run: npm install
       - name: Update
         run: |
+          force="${{ github.event.inputs.force }}"
+          [ "$force" = "0" ] && echo 'force = 0'
+          [ "$force" = "1" ] && echo 'force = 1'
+          [ "$force" != "0" ] && echo 'force != 0'
+          [ "$force" != "1" ] && echo 'force != 1'
+          
           # Bump Version
-          npm version patch --no-git-tag-version
+          # npm version patch --no-git-tag-version
 
           # Push
-          git push --follow-tags
+          # git push --follow-tags
