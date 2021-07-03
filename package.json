@@ -1,6 +1,6 @@
 {
   "name": "@marella/temp-test-gha-202107",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "files": [],
   "scripts": {
     "postversion": "VERSION=$(node -p \"require('./package.json').version\") npm run git-commit-tag",
