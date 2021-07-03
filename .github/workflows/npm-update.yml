@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       force:
-        description: 'Force Update'
+        description: Force Update
 
 jobs:
   update:
@@ -21,6 +21,7 @@ jobs:
       - name: Update
         run: |
           force="${{ github.event.inputs.force }}"
+
           [ "$force" = "0" ] && echo 'force = 0'
           [ "$force" = "1" ] && echo 'force = 1'
           [ "$force" != "0" ] && echo 'force != 0'
