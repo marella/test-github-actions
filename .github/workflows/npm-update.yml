@@ -25,6 +25,7 @@ jobs:
           [ "$force" = "1" ] && echo 'force = 1'
           [ "$force" != "0" ] && echo 'force != 0'
           [ "$force" != "1" ] && echo 'force != 1'
+          echo "force is '$force'"
           
           # Bump Version
           # npm version patch --no-git-tag-version
