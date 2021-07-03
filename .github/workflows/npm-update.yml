@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       force:
+        description: 'Force Update'
 
 jobs:
   update:
