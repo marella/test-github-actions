@@ -39,6 +39,12 @@ jobs:
           [ "$dry" != "1" ] && echo 'dry != 1'
           echo "dry is '$dry'"
           
+          echo "::group::My title"
+          echo "Inside group"
+          echo "::endgroup::"
+          
+          node log.js
+          
           # Bump Version
           # npm version patch --no-git-tag-version
 
