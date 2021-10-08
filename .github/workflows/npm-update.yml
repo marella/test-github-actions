@@ -27,8 +27,8 @@ jobs:
           force="${{ github.event.inputs.force }}"
           dry="${{ github.event.inputs.dry }}"
 
-          (exit 4)
-          status=$?
+          status=0
+          (exit 4) || status=$?
           if [ $status -eq 0 ] || [ $status -eq 4 ]; then
             if [ "$force" != "1" ]; then
               echo "= 0 or = 4"
